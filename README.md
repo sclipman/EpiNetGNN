@@ -38,10 +38,11 @@ install.packages(c("tidyverse", "lubridate", "igraph", "intergraph", "matrixStat
 ### Setup and Usage
 
 #### GNN (Python)
-	1.	Data Preparation:
+1.	Data Preparation:
 	•	Place your baseline_features.csv and EdgeList_Sociometric.csv files in the GNN/ directory.
 	•	These files should include the individual-level node attributes and the sociometric edge list, respectively.
-	2.	Running the Notebook:
+
+2.	Running the Notebook:
 	•	Open the GNN_notebook.ipynb in Jupyter Notebook or JupyterLab.
 	•	Execute the cells sequentially. The notebook includes:
 	•	Dependency checks and imports.
@@ -50,15 +51,17 @@ install.packages(c("tidyverse", "lubridate", "igraph", "intergraph", "matrixStat
 	•	Splitting the graph into training, validation, and test sets.
 	•	Definition and training of the GraphSAGE model with hyperparameter optimization using Optuna.
 	•	Network imputation and visualization using PyVis.
-	3.	Model Evaluation:
+
+3.	Model Evaluation:
 	•	The notebook calculates performance metrics (accuracy, precision, recall, F1 score) and plots training/validation loss curves.
 	•	The imputed network can be visualized interactively using the provided plotting functions.
 
 #### ERGM (R)
-	1.	Data Preparation:
+1.	Data Preparation:
 	•	Place your baseline_data.rds and EdgeList_Sociometric.csv files in the ERGM/ directory.
 	•	Ensure that the data is formatted as required by the script.
-	2.	Running the Script:
+
+2.	Running the Script:
 	•	Open the ERGM_script.R in RStudio or run it from the R console.
 	•	The script:
 	•	Loads and preprocesses baseline survey data and constructs the sociometric network.
